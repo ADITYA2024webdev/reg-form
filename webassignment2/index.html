@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <center>
+    <h1>Registration Form</h1>
+    <form id="registrationForm" method="post" action="process.php">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <div id="displayArea" style="display:none;">
+        <h2>Registration Details:</h2>
+        <div id="detailsContent"></div>
+    </div>
+    </center>
+
+    <script src="script.js"></script>
+</body>
+</html>
